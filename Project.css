@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D5FFD0;
+}
+
+.nav-bar {
+    background-color: #0C356A;
+    display: flex;
+    justify-content: right;
+    color: white;
+}
+
+.nav-bar .right li {
+    display: flex;
+    float: left;
+    padding: 20px;
+    margin-right: 80px;
+    font-size: 20px;
+}
+
+.nav-bar .right li a {
+    color: white;
+    text-decoration: none; 
+}
+
+.nav-bar .right li a:hover {
+    color: #279EFF; 
+}
+
+.left {
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    margin-right: 600px;
+}
+
+.project-body .b1, .project-body .b2, .project-body .b3 {
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 70px;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-body h2 {
+    font-weight: 600;
+    margin: 20px;
+}
+
+.b1 .p1, .b2 .p2, .b3 .p3 {
+    display: flex;
+    flex: 40%;
+    max-width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+/* Update the image width to make them smaller */
+.b1 img, .b2 img, .b3 img {
+    display: flex;
+    flex: 60%;
+    max-width: 550px; 
+    border:  2px solid black;
+    border-radius: 10px;
+    height: auto; 
+    font-weight: 200px;
+    transition: transform 0.3s ease;
+}
+
+/* Define a hover effect to increase the size of the image */
+.b1 img:hover, .b2 img:hover, .b3 img:hover {
+    transform: scale(1.2);
+}
